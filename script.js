@@ -27,19 +27,26 @@
         {name: 'simone', surname: 'servodidio', age: 28},
         {name: 'alexi', surname: 'melis', age: 21},
     ]
-    console.log(students);
 
+    console.log('lista base: ');
     for (var i = 0; i < students.length; i++){
         var currentStudent = students[i];
+        // stampo i dati di tutti gli studenti nell'arrey base
         console.log(currentStudent);
     }
 
     newStudent = {name: '', surname: '', age: '',} 
-
+    //raccolgo i dati dello studente da aggiungere
     newStudent.name = prompt('inserisci il tuo nome');
     newStudent.surname = prompt('inserisci il tuo cognome');
-    newStudent.age = prompt('inserisci la tua età');
-    console.log(newStudent);
-
+    newStudent.age = parseInt(prompt('inserisci la tua età'));
+    console.log('il nuovo studente è ' + newStudent.name + ' ' + newStudent.surname + ' ' + 'età: ' + newStudent.age);
+    //inserisco il nuovo studente nell'arrey
     students.push(newStudent);
-    console.log(students);
+
+    console.log('lista aggiornata: ');
+    for (var i = 0; i < students.length; i++){
+        var currentStudent = students[i];
+        // stampo i dati di tutti gli studenti nell'arrey base
+        console.log(currentStudent);
+    }
