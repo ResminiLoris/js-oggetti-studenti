@@ -11,12 +11,35 @@
 // Quando tutto funziona col console.log possiamo preoccuparci di eseguire in pagina!
 
 
+// esercizio 1
+    // var student = {name:"Loris", surname:"Resmini", age:26}; 
+    // var text = "";
+    // var key;
+    // for (key in student) {
+    //   text += student[key] + " ";
+    // }
+    // document.getElementById("student-placeholder").innerHTML = text;
 
-    var student = {name:"Loris", surname:"Resmini", age:26}; 
-    var text = "";
-    var key;
-    for (key in student) {
-      text += student[key] + " ";
+// esercizio 2
+
+    const students = [
+        {name: 'loris', surname: 'resmini', age: 26 },
+        {name: 'simone', surname: 'servodidio', age: 28},
+        {name: 'alexi', surname: 'melis', age: 21},
+    ]
+    console.log(students);
+
+    for (var i = 0; i < students.length; i++){
+        var currentStudent = students[i];
+        console.log(currentStudent);
     }
-    document.getElementById("student-placeholder").innerHTML = text;
-  
+
+    newStudent = {name: '', surname: '', age: '',} 
+
+    newStudent.name = prompt('inserisci il tuo nome');
+    newStudent.surname = prompt('inserisci il tuo cognome');
+    newStudent.age = prompt('inserisci la tua età');
+    console.log(newStudent);
+
+    students.push(newStudent);
+    console.log(students);
