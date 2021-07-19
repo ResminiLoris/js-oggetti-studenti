@@ -47,6 +47,6 @@
     console.log('lista aggiornata: ');
     for (var i = 0; i < students.length; i++){
         var currentStudent = students[i];
-        // stampo i dati di tutti gli studenti nell'arrey base
+        // stampo i dati di tutti gli studenti nell'arrey aggiornata
         console.log(currentStudent);
     }
